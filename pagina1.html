@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protección Animal - BENEA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* LAYOUT CON SIDEBARS */
+    .layout {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #1d3f2c;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 900px;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #1d3f2c;
+    }
+
+    /* ORGANIZACIONES */
+    ul.organizaciones {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    li.organizacion {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    li.organizacion:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* IMÁGENES GRANDES */
+    li.organizacion img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    li.organizacion h2 {
+      color: #1d3f2c;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    li.organizacion p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    li.organizacion a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #1d3f2c;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    li.organizacion a:hover { color: #34575a; }
+
+    /* BOTON VOLVER */
+    .volver {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #1d3f2c;
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .volver:hover { background-color: #34575a; }
+
+    /* RESPONSIVE */
+    @media(max-width: 1024px) {
+      .layout { flex-direction: column; }
+      .sidebar { width: 100%; position: relative; top: 0; margin-bottom: 20px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- BARRA IZQUIERDA -->
+    <aside class="sidebar">
+      <h3>Eventos</h3>
+      <p>🐶 Campaña de adopción - 12/10</p>
+      <p>🏥 Jornadas de salud animal - 20/10</p>
+      <p>📚 Taller de educación responsable - 28/10</p>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="content">
+      <header>
+        <img src="Fondo Negro.png" alt="Logo de BENEA">
+        <h1>Protección Animal</h1>
+      </header>
+
+      <ul class="organizaciones">
+        <li class="organizacion">
+          <img src="AmigosDeLosAnimales.png" alt="ONG Amigos de los Animales Paysandú">
+          <h2>ONG Amigos de los Animales Paysandú (ONGAAP)</h2>
+          <p>Rescatan y rehabilitan animales maltratados, realizan castraciones gratuitas y campañas educativas.</p>
+          <a href="https://amigosdelosanimalesuruguay.org/" target="_blank">Página oficial</a>
+        </li>
+
+        <li class="organizacion">
+          <img src="Ash.png" alt="Animales Sin Hogar">
+          <h2>Animales Sin Hogar (ASH)</h2>
+          <p>Colabora con protectoras locales brindando casas puente, adopciones y apoyo logístico.</p>
+          <a href="https://www.animalessinhogar.com.uy/" target="_blank">Página oficial</a>
+        </li>
+
+        <li class="organizacion">
+          <img src="CeroCallejero.png" alt="Fundación Cero Callejero">
+          <h2>Fundación Cero Callejero / Programa INBA local</h2>
+          <p>Incluye esterilización, colocación de microchips y vacunación, colaborando con protectoras locales.</p>
+          <a href="https://cerocallejero.org/" target="_blank">Página oficial</a>
+        </li>
+      </ul>
+
+      <a href="PruebaFinalVersion2.html" class="volver">Volver al inicio</a>
+    </main>
+
+    <!-- BARRA DERECHA -->
+    <aside class="sidebar">
+      <h3>Publicidad</h3>
+      <p>🐾 Veterinaria Paysandú</p>
+      <p>🌿 Tienda Eco Sustentable</p>
+      <p>📢 Próximo evento: Feria Animal - 18/10</p>
+    </aside>
+
+  </div>
+
+</body>
+</html>

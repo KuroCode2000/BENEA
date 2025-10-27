@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">           <!-- Habilitar tildes o caracteres especiales -->    
+
+  <title>BENEA</title>
+  <link rel="icon" href="Fondo Transparente.png" type="image/png">  <!-- Agregar un ícono al lado del titulo (Favicon) --> 
+
+  <style>
+    * {                         /* { selector universal, * Seleccioná todos los elementos HTML de la página, sirve para resetear estilos por defecto del navegador, para cambiar el tipo de letra o definir una animación general. */
+      box-sizing: border-box;             
+      margin:  0;
+      padding: 0;              /* Muchos navegadores agregan márgenes, rellenos o bordes automáticamente a ciertos elementos. 
+                               Con * { margin: 0; padding: 0; }, eliminás esos valores predeterminados. */
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #c0cfec;                /* Color del fondo de la página */
+      color: #333;                        /* Color de los parrafos */
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 36px;             /* Todo titulo h1 con ese tamaño */
+      margin-bottom: 40px;         /* Espacio luego de cada titulo */
+      color: #222;               /* Color del titulo*/
+    }
+
+    .secciones {
+      display: flex;
+      justify-content: center;
+      gap: 30px;                   /* Separacion entre secciones */
+      flex-wrap: wrap;
+    }
+
+    .seccion {
+      background: rgb(29, 63, 44);               /* Color del fondo de las secciones */
+      border-radius: 12px;                         /* Borde de las secciones */
+      box-shadow: 0 48px 12px rgba(0,0,0,0.1);   /* Sombreado, que tan abajo esta y trasparente es */
+      padding: 30px 40px;
+      width: 250px;
+      text-decoration: none;
+      color: #0077cc;                                   /* Color de las letras dentro de las secciones */
+      transition: transform 0.2s, background-color 1s;    /* Velocidad de movimiento del efecto de las secciones */
+    }
+
+    .seccion:hover {
+      transform: translateY(-17px);         /* Efecto de movimiento de las secciones, negativo es hacia arriba */
+      background-color: #4f5f6e;         /* Fondo de la seccion al pasar el mouse */
+    }
+
+    .seccion h2 {
+      font-size: 20px;                 /* Tamaño del titulo h2 dentro de la sección */
+      margin-bottom: 7px;              /* Espacio entre el titulo y la sección dentro */
+    }
+  </style>
+</head>
+<body>
+
+   <img src="Fondo Negro.png" alt="Descripcion de la imagen" height="120" width="140" style="float: left;">
+  <h1>Bienvenido a BENEA</h1>
+
+  <div class="secciones">
+    <a class="seccion" href="pagina1.html">      <!-- La clase seccion, me lleva a otra pagina html -->   
+      <h2>Protección animal</h2>
+    </a>
+
+    <a class="seccion" href="pagina2.html">
+      <h2>Medio ambiente y territorio</h2>
+    </a>
+
+    <a class="seccion" href="pagina3.html">
+      <h2>Bienestar social y salud</h2>
+    </a>
+  </div>
+
+   <h2><br> Organizaciones Solidarias de Paysandú</h2>
+  <p style="text-align: left;">Conocé las iniciativas sin fines de lucro que trabajan por el bienestar de la comunidad, el cuidado de los animales y el medio ambiente en Paysandú.</p>
+
+  
+    <h3><br> Protección Animal</h3> <img src="Protección Animal.png" alt="Descripcion de la imagen" height="100" width="120">
+    <h3><br> Medio Ambiente y Territorio</h3> <img src="Medio Ambiente.jpg" alt="Descripcion de la imagen" height="100" width="120">
+    <h3><br> Bienestar Social y Salud</h3> <img src="Bienestar Social.jpg" alt="Descripcion de la imagen" height="100" width="120">
+  
+
+</body>
+</html>
